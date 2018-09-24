@@ -32,14 +32,19 @@ public class ClassMarks {
 		//prints array in table
 		System.out.print("STUDENTS\t");
 		for(int colNum = 0; colNum < 7; colNum ++) {
-			System.out.print(colNum + "\t");
+			System.out.print(colNum + "   |\t");
 		}
 		
-		System.out.println("\n");
+		System.out.print("\n\t\t");
+		for(int count = 0; count < 53; count ++) {
+			System.out.print("—");
+		}
+		System.out.println("");
+		
 		int rowNum = 1;
 		
 		for(int arrRow = 0; arrRow < arrPrt.length; arrRow ++) {
-			System.out.print("\t\t" + rowNum + "\t");
+			System.out.print("\t\t" + rowNum + "   |\t");
 			rowNum++;
 			for(int arrCol = 0; arrCol < arrPrt[arrRow].length; arrCol ++) {
 				System.out.print(arrPrt[arrRow][arrCol] + "\t");
