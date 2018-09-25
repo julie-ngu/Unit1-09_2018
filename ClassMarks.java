@@ -23,7 +23,7 @@ public class ClassMarks {
 		}
 		double classAverage = MarksAvgCal(classMarksArr);		
 		
-		System.out.print("\t\t\t\tASSIGNMENTS\n");
+		System.out.print("\t\t\t\t\tASSIGNMENTS\n");
 		PrintTable(classMarksArr);
 		System.out.print("\n\nThe class average is " + classAverage + ".");
 	}
@@ -37,7 +37,7 @@ public class ClassMarks {
 		
 		System.out.print("\n\t\t");
 		for(int count = 0; count < 53; count ++) {
-			System.out.print("—");
+			System.out.print("-");
 		}
 		System.out.println("");
 		
