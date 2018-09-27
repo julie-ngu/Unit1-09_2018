@@ -23,13 +23,13 @@ public class ClassMarks {
 		}
 		double classAverage = MarksAvgCal(classMarksArr);		
 		
-		System.out.print("\t\t\t\t\tASSIGNMENTS\n");
 		PrintTable(classMarksArr);
-		System.out.print("\n\nThe class average is " + classAverage + ".");
+		System.out.print("\n\nThe class average is " + classAverage + ".\n");
 	}
 	
 	public static void PrintTable(int arrPrt[][]) {
 		//prints array in table
+		System.out.print("\t\t\t\t\tASSIGNMENTS\n");
 		System.out.print("STUDENTS\t");
 		for(int colNum = 0; colNum < 7; colNum ++) {
 			System.out.print(colNum + "   |\t");
