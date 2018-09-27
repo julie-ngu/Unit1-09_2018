@@ -9,6 +9,7 @@
  * 
  ****************************************************************************/
 import java.util.Random;
+import java.lang.Math;
 
 public class ClassMarksExtra {
 	public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class ClassMarksExtra {
 				classMarksArr[students][assignments] = randMark;
 			}
 		}
-		double classAverage = MarksAvgCal(classMarksArr);		
+		int classAverage = MarksAvgCal(classMarksArr);		
 		
 		
 		PrintTable(classMarksArr);
@@ -56,10 +57,10 @@ public class ClassMarksExtra {
 		}
 	}
 	
-	public static double MarksAvgCal(int array[][]) {
+	public static int MarksAvgCal(int array[][]) {
 		//calculates average of array
-		int arrSum = 0;
-		int arrLen = 0;
+		float arrSum = 0;
+		float arrLen = 0;
 		
 		for(int row = 0; row < array.length; row ++) {
 			for(int column = 0; column < array[row].length; column ++) {
@@ -68,7 +69,7 @@ public class ClassMarksExtra {
 			}
 		}
 		
-		double arrAvg = arrSum / arrLen;
+		int arrAvg = Math.round(arrSum / arrLen);
 		
 		return arrAvg;
 	}
